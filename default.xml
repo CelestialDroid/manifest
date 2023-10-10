@@ -86,7 +86,7 @@
   <project path="device/google/felix-kernel" name="device_google_felix-kernel" groups="device,felix" clone-depth="1" remote="grapheneos" />
   <project path="device/google/gs101" name="device_google_gs101" groups="device,slider,bluejay,blueport,pdk-gs-arm" remote="grapheneos" />
   <project path="device/google/gs101-sepolicy" name="device_google_gs101-sepolicy" groups="device,slider,bluejay,blueport,pdk-gs-arm" remote="grapheneos" />
-  <project path="device/google/gs201" name="device_google_gs201" groups="device,cloudripper" remote="grapheneos" />
+  <project path="device/google/gs201" name="device_google_gs201" groups="device,cloudripper" remote="celestial" />
   <project path="device/google/gs201-sepolicy" name="device_google_gs201-sepolicy" groups="device,cloudripper" remote="grapheneos" />
   <project path="device/google/gs-common" name="device_google_gs-common" groups="device,slider,bluejay,blueport,cloudripper,pdk-gs-arm,pdk-cw-tvc" remote="grapheneos" />
   <project path="device/google/lynx" name="device_google_lynx" groups="device,lynx" remote="grapheneos" />
