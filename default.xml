@@ -9,7 +9,7 @@
            revision="refs/heads/14" />
   <remote  name="celestial"
            fetch="https://github.com/CelestialDroid/"
-           revision="refs/heads/13-staging" />
+           revision="refs/heads/14" />
   <remote  name="grapheneos-gitlab"
            fetch="https://gitlab.com/grapheneos/"
            revision="refs/heads/14" />
