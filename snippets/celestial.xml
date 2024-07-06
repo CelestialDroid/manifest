@@ -45,5 +45,10 @@
   <!-- System -->
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="celestial" />
 
+
+  <!-- Vendor -->
+  <project path="vendor/celestial" name="vendor_celestial" remote="celestial" />
+
+
 </manifest>
 
