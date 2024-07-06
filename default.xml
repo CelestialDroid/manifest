@@ -1478,6 +1478,7 @@
 
   <include name="snippets/remove.xml" />
   <include name="snippets/celestial.xml" />
+  <include name="snippets/external.xml" />
 
   <!-- END open-source projects -->
 
