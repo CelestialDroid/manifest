@@ -19,7 +19,7 @@
 
   <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r67"/>
   <contactinfo bugurl="go/repo-bug" />
-  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="celestial" >
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="grapheneos" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -88,7 +88,7 @@
   <project path="device/google/felix-kernel" name="device_google_felix-kernel" groups="device,felix" clone-depth="1" remote="grapheneos" />
   <project path="device/google/gs101" name="device_google_gs101" groups="device,slider,bluejay,pdk-gs-arm" remote="grapheneos" />
   <project path="device/google/gs101-sepolicy" name="device_google_gs101-sepolicy" groups="device,slider,bluejay,pdk-gs-arm" remote="grapheneos" />
-  <project path="device/google/gs201" name="device_google_gs201" groups="device,cloudripper" remote="celestial" />
+  <project path="device/google/gs201" name="device_google_gs201" groups="device,cloudripper" remote="grapheneos" />
   <project path="device/google/gs201-sepolicy" name="device_google_gs201-sepolicy" groups="device,cloudripper" remote="grapheneos" />
   <project path="device/google/gs-common" name="device_google_gs-common" groups="device,slider,bluejay,cloudripper,pdk-gs-arm" remote="grapheneos" />
   <project path="device/google/lynx" name="device_google_lynx" groups="device,lynx" remote="grapheneos" />
@@ -928,7 +928,7 @@
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="celestial" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -936,7 +936,7 @@
   <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces" groups="pdk,sysui-studio" />
   <project path="frameworks/layoutlib" name="platform/frameworks/layoutlib" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/libs/binary_translation" name="platform/frameworks/libs/binary_translation" groups="pdk" />
-  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="celestial" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" />
   <project path="frameworks/libs/modules-utils" name="platform_frameworks_libs_modules-utils" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" />
   <project path="frameworks/libs/native_bridge_support" name="platform/frameworks/libs/native_bridge_support" groups="pdk" />
   <project path="frameworks/libs/service_entitlement" name="platform/frameworks/libs/service_entitlement" groups="pdk" />
@@ -1097,7 +1097,6 @@
   <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="grapheneos" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" groups="pdk-fs" remote="grapheneos" />
   <project path="packages/apps/GmsCompat" name="platform_packages_apps_GmsCompat" groups="pdk-fs" remote="grapheneos" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" groups="pdk-fs" remote="celestial" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
@@ -1117,7 +1116,7 @@
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" groups="pdk-fs" />
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs" />
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="celestial" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="grapheneos" />
   <project path="packages/apps/SettingsIntelligence" name="platform/packages/apps/SettingsIntelligence" groups="pdk-fs" />
   <project path="packages/apps/SetupWizard2" name="platform_packages_apps_SetupWizard2" remote="grapheneos" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
@@ -1146,7 +1145,7 @@
   <project path="packages/modules/CellBroadcastService" name="platform/packages/modules/CellBroadcastService" groups="pdk" />
   <project path="packages/modules/common" name="platform_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
   <project path="packages/modules/ConfigInfrastructure" name="platform_packages_modules_ConfigInfrastructure" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="celestial" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
   <project path="packages/modules/CrashRecovery" name="platform/packages/modules/CrashRecovery" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/Cronet" name="platform/packages/modules/Cronet" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/DeviceLock" name="platform/packages/modules/DeviceLock" groups="pdk-cw-fs,pdk-fs" />
@@ -1413,4 +1412,8 @@
   </project>
   <project path="vendor/adevtool" name="adevtool" remote="grapheneos" />
   <project path="vendor/state" name="vendor_state" remote="grapheneos" clone-depth="1" />
+
+  <include name="snippets/remove.xml" />
+  <include name="snippets/celestial.xml" />
+
 </manifest>

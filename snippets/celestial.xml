@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="celestial-devices"
+           fetch="https://github.com/CelestialDroid-Devices/"
+           revision="refs/heads/14" />
+
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="celestial" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="celestial" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
+  <!-- Device -->
+  <project path="device/common" name="device_common" groups="pdk-cw-fs,pdk" remote="celestial" />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" groups="device" remote="celestial" />
+  <project path="device/google/gs201" name="device_google_gs201" groups="device,cloudripper" remote="celestial" />
+  <project path="device/google/pantah" name="device_google_pantah" groups="device,cloudripper" remote="celestial" />
+
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="celestial" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="celestial" />
+
+
+  <!-- Packages -->
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" groups="pdk-fs" remote="celestial" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="celestial" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="celestial" />
+
+  <!-- Scripts -->
+  <project path="script" name="scripts" remote="celestial" />
+
+
+  <!-- System -->
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="celestial" />
+
+</manifest>
+
