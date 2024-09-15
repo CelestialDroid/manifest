@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-
   <!-- Build -->
   <remove-project name="platform_build" />
-  <remove-project name="platform_build_soong" />
-
 
   <!-- Device -->
-  <remove-project name="device_common" />
   <remove-project name="device_google_gs201" />
-  <remove-project name="device_google_pantah" />
-
 
   <!-- Frameworks -->
   <remove-project name="frameworks_base" />
   <remove-project name="frameworks_libs_systemui" />
 
-
   <!-- Packages -->
   <remove-project name="packages_apps_Settings" />
   <remove-project name="packages_modules_Connectivity" />
-
-
-  <!-- Scripts -->
-  <remove-project name="script" />
-
-
-  <!-- System -->
-  <remove-project name="platform_system_sepolicy" />
 
 </manifest>
 
