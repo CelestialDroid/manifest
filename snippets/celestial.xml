@@ -3,7 +3,7 @@
 
   <remote  name="celestial-devices"
            fetch="https://github.com/CelestialDroid-Devices/"
-           revision="refs/heads/14" />
+           revision="refs/heads/15" />
 
   <!-- Build -->
   <project path="build/make" name="build" groups="pdk,sysui-studio" remote="celestial" >
@@ -16,7 +16,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/google/gs201" name="device_google_gs201" groups="device,cloudripper" remote="celestial" />
+  <project path="device/google/gs201" name="device_google_gs201" groups="device,cloudripper,pdk-gs-arm" remote="celestial" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="celestial" />
